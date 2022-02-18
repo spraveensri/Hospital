@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    VMG HOSPITAL APPOINTMENT FORM
+  </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:lightblue;
+}
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+  }
+  .co{
+  background-color:lightblue;
+  color:black;
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  height:20vh;
+}
+.contact{
+  
+  padding:0px;
+  margin-left:10px;
+}
+.contact p{
+  padding:8px;
+}
+.nu p{
+  padding:8px;
+}
+.topnav {
+  overflow: hidden;
+  background-color:brown;
+}
+
+.topnav img,a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding-bottom:0px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right:88px;
+
+}
+
+.topnav a{
+  padding: 14px 16px;
+  text-align:center;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: darkturquoise;
+  color: white;
+}
+
+* {box-sizing: border-box;}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.bg-img {
+  background-image: url('https://www.citizenshospitals.com/wp-content/uploads/layerslider/Homepage-Slider-1/Backround1.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  }
+  
+.input-container {
+  display: -ms-flexbox; 
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 80%;
+  padding: 10px;
+  outline: none;
+}
+.inputarea {
+  margin: 0px;
+  width: 80%;
+  height: 40px;
+  text-align: left;
+}
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border-color: white;
+  cursor: pointer;
+  width: 90%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+  <div class="bg-img">
+    <div class="topnav">
+      <img src="logo.png" alt="VMG hospital" style="width:350px;height:65px;">
+      <a href="index.html">HOME</a>
+      <a class="active" href="registration.html">APPOINTMENT FORM</a>
+      <a href="doctor.html">DOCTOR'S LIST</a>
+      <a href="fund.html">FUNDS</a>
+    </div>
+    
+<form action="/action_page.php" style="max-width:500px;margin:auto">
+
+  <h2>PATIENT APPOINTMENT FORM</h2>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Patient Name" name="patientnm" required>
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-calendar icon"></i>
+    <input class="input-field" type="text" placeholder="Age" name="age" required>
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email" required>
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-address-card icon"></i>
+    <textarea class="inputarea" placeholder=" Address" name="address"></textarea>  
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-phone icon"></i>
+    <input class="input-field" type="tel" placeholder="Phonenumber" name="phone" required>
+  </div>
+  
+  <div class="input-container">
+    <i class="	fa fa-intersex icon"></i>
+    <input class="input-field" list="gender" placeholder="Gender" name="gender" required>
+    <datalist id="gender">
+      <option value="Male"></option>
+      <option value="Female"></option>
+      <option value="Others"></option>
+    </datalist>
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" list="status" placeholder="Maritual Status" name="maritual" required>
+    <datalist id="status">
+      <option value="Single"></option>
+      <option value="Married"></option>
+      <option value="Divorced"></option>
+      <option value="Legally seperated"></option>
+      <option value="Widoewd"></option>
+    </datalist>
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-lightbulb-o icon"></i>
+    <input class="input-field" type="text" placeholder="Reason For Registration" name="reason" required>
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-info icon"></i>
+    <input class="input-field" list="consern" placeholder="Already Consern " name="reason" required>
+    <datalist id="consern">
+      <option value="Yes"></option>
+      <option value="No"></option>
+    </datalist>
+  </div>
+  
+  <button onclick="myFunction()" class="btn" type="submit">Register</button>
+</form>
+<script>
+  function myFunction() {
+    alert("Your registration is successfully completed")
+  }
+</script>
+  </div>
+  <div class="co">
+    <div class="contact">
+      <address>
+        <p>ADDRESS:124/1,nallipalayam</p>
+        <p>velur</p>
+        <p>erode</p>
+        </address>
+        </div>
+        <div class="nu">
+          <p>CONTACT NUMBER</p><p>9039857257</p>
+          <p>9080820969</p></div>
+    </div>
+  </div>
+</body>
+</html>

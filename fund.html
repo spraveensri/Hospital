@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    VMG HOSPITAL FUNDS 
+  </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+  background-image: url('https://shreya22dhumal.files.wordpress.com/2015/09/hospital.jpg');
+  background-image:lightblue;
+
+}
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+  }
+
+.topnav {
+  overflow: hidden;
+  background-color:brown;
+}
+
+.topnav img,a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding-bottom:0px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right:88px;
+
+}
+
+.topnav a{
+  padding: 14px 16px;
+  text-align:center;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: darkturquoise;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  }
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; 
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 30%; 
+  flex: 30%;
+}
+
+.col-75 {
+  -ms-flex: 55%; 
+  flex: 55%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  margin: 10px;
+  background-color:transparent;
+  padding: 5px 20px 15px 20px;
+  border: 2px solid white;
+  border-radius: 3px;
+}
+
+.dec {
+  margin: 15px;
+}
+
+input[type=text],input[type=tel] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #12628a;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border-color:white;
+  width: 48%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #1575c4;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+.co{
+  background-color:lightblue;
+  color:black;
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  height:20vh;
+}
+.contact{
+  
+  padding:0px;
+  margin-left:10px;
+}
+.contact p{
+  padding:8px;
+}
+.nu p{
+  padding:8px;
+}
+</style>
+</head>
+<body>
+  <div class="bg-img">
+    <div class="topnav">
+      <img src="logo.png" alt="ganga hospital" style="width:350px;height:65px;">
+      <a href="index.html">HOME</a>
+      <a href="registration.html">APPOINTMENT FORM</a>
+      <a href="doctor.html">DOCTOR'S LIST</a>
+      <a class="active" href="fund.html">FUNDS</a>
+    </div>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      <center><h2>FUND DONATION FORM</h2></center>
+        <div class="row">
+          <div class="col-50">
+            <h3>Personal Information</h3>
+          </div>
+        </div>
+            <div class="row">
+              <div class="col-50">
+            <label for="fname"><i class="fa fa-user"></i> First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="First Name" required>
+          </div>
+          <div class="col-50">
+            <label for="lname"><i class="fa fa-user"></i> Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
+          </div>
+        </div>
+            <div class="row">
+              <div class="col-50">
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" placeholder="ex: xy@gmail.com" required>
+              </div>
+              <div class="col-50">
+                <label for="phone"><i class="fa fa-phone"></i> Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phoneumber" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-50">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="Address" required>
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="City" required>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="State" required>
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="600000" required>
+              </div>
+            </div>
+            
+        <h3>Declaration</h3>
+        <label>
+          <b>Billing Information </b><input type="checkbox" name="sameadr"> same as my personal information
+        </label><br>
+     
+    </div>
+  </div>
+<div class="col-25">
+  <div class="container">
+      <div class="col-50">
+          <h3>Payment</h3>
+          <label for="fname">Accepted Cards</label>
+          <div class="icon-container">
+            <i class="fa fa-cc-visa" style="color:navy;"></i>
+            <i class="fa fa-cc-amex" style="color:blue;"></i>
+            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+            <i class="fa fa-cc-discover" style="color:orange;"></i>
+          </div>
+          <label for="cname">Name on Card</label>
+          <input type="text" id="cname" name="cardname" placeholder="Card holder Name" required>
+          <label for="ccnum">Credit card number</label>
+          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+          <label for="expmonth">Exp Month</label>
+          <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+          <div class="row">
+            <div class="col-50">
+              <label for="expyear">Exp Year</label>
+              <input type="text" id="expyear" name="expyear" placeholder="2018" required>
+            </div>
+            <div class="col-50">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" name="cvv" placeholder="352" required>
+            </div>
+          </div>
+          <h3>Declaration</h3>
+        <label>
+          <input type="checkbox"  name="dec"> I Agree that given details are true by myself.
+        </label><br>
+        <label>
+          <input type="checkbox"  name="dec"> I prefer that this donation remains anonymous.
+        </label><br>
+      </div>
+  </div>
+  </div>
+</div>
+<center><input type="submit" value="Click to submit" class="btn"></center>
+
+</form>
+</div>
+<div class="co">
+  <div class="contact">
+    <address>
+      <p>ADDRESS:124/1,nallipalayam</p>
+      <p>velur</p>
+      <p>erode</p>
+      </address>
+      </div>
+      <div class="nu">
+        <p>CONTACT NUMBER</p><p>9039857257</p>
+        <p>9080820969</p></div>
+  </div>
+</div>
+</body>
+</html>
